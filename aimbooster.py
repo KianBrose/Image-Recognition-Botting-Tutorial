@@ -15,17 +15,21 @@ def click(x,y):
 #Color of center: (255, 219, 195)
 
 while keyboard.is_pressed('q') == False:
-
-    pic = pyautogui.screenshot(region=(660,350,600,400))
+    flag = 0
+    pic = pyautogui.screenshot(region=(584, 422, 751, 526))
 
     width, height = pic.size
 
-    for x in range(0,width,5):
-        for y in range(0,height,5):
+    for x in range(0, width, 5):
+        for y in range(0, height, 5):
 
-            r,g,b = pic.getpixel((x,y))
+            r, g, b = pic.getpixel((x, y))
 
-            if b == 195:
-                click(x+660,y+350)
+            if b == 195 and r == 255 and g == 219:
+                flag = 1
+                click(x+584, y+422)
                 time.sleep(0.05)
                 break
+
+        if flag == 1:
+            break
