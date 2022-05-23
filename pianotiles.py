@@ -1,8 +1,8 @@
-from pyautogui import *
+# Game: https://www.agame.com/game/magic-piano-tiles
+
 import pyautogui
 import time
 import keyboard
-import random
 import win32api, win32con
 
 #Tile 1 Position: X:  581 Y:  400 RGB: ( 77,  80, 115)

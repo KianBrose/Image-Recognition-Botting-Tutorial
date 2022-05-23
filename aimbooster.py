@@ -1,8 +1,8 @@
-from pyautogui import *
+# Game: http://www.aimbooster.com/
+
 import pyautogui
 import time
 import keyboard
-import random
 import win32api, win32con
 
 time.sleep(2)
