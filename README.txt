@@ -1,3 +1,9 @@
+# IMPORTANT NOTE
+
+If you came here from the YouTube video, keep in mind that using .locateOnScreen(..) == None does not work on newer versions of Pyautogui because the devs decided to change the syntax
+
+
+
 # Image-Recognition-Botting-Tutorial
 Hello! This is the code I use in the https://www.youtube.com/watch?v=YRAIUA-Oc1Y video
 
